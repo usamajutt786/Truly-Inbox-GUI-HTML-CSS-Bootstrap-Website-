@@ -1,0 +1,53 @@
+/* Align table cells vertically middle */
+table tr td {
+    vertical-align: middle;
+}
+
+/* Add margin to buttons inside table cells */
+td button {
+    margin: 5px;
+}
+
+/* Adjust font size of icons inside buttons */
+td button i {
+    font-size: 20px;
+}
+
+/* Style for email service images */
+.email-service img {
+    margin-top: 10px;
+    max-width: 30%;
+}
+
+/* Center align text inside email service containers */
+.email-service p {
+    text-align: center;
+}
+
+/* Styles for modal background and columns */
+.modal-content {
+    background-color: white; /* Whole modal background white */
+}
+
+.custom-col {
+    background-color: rgb(207, 199, 199); /* Columns area black */
+    padding: 10px; /* Adjust padding as needed */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    text-align: center;
+}
+
+/* Make the entire column clickable */
+.custom-col a {
+    color: rgba(246, 236, 236, 0.917);
+    display: block;
+    text-decoration: none;
+    color: black; /* Change text color to white */
+}
+
+/* Center align text inside service-name */
+.service-name {
+    text-align: center;
+    margin-top: 2px; /* Adjust this value for spacing */
+}
+
+

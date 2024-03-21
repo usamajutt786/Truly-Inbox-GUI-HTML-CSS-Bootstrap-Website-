@@ -1,0 +1,76 @@
+*{
+    font-size: 14px;
+}
+/* Tab Bar */
+/* margin set to too of nav items*/
+.nav-tabs .nav-item {
+    margin-top: -35px;
+}
+.nav-link.active::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #fd7e14;
+    position:relative;
+    bottom: -16px;
+}
+.logo {
+    width: 50px;
+    margin-left: 5px;
+}
+/*  profile icon on the tabbar  */
+.profile-icon {
+    width: 35px; /* Adjust as needed */
+    height: 35px; /* Adjust as needed */
+    margin-right: 10px;
+}
+ /* Set color to black for all links */
+
+.navbar-brand, .nav-link {
+    color: black !important;
+}
+
+/* chnage the round border from the nav fields  */
+#warmup-tab, #warmup-tab:hover
+{
+    border: none;
+} 
+#billing-tab, #billing-tab:hover
+{
+    border: none;
+} 
+#coldEmail-tab, #coldEmail-tab:hover
+{
+    border: none;
+} 
+#dropdown
+{
+    border: none;
+    color: #fd7e14;
+}
+#nav-item,nav-item:hover
+{
+    border: none;
+} 
+.dropdown-menu a.dropdown-item i {
+    font-weight: bold;
+    padding-right: 10px;
+}
+/* chatbot */
+/* Existing CSS remains the same */
+
+/* Chatbot icon styling */
+ .chatbot-icon {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 65px; /* Adjust the size as needed */
+    
+   } 
+  .chatbot-icon:hover {
+    transform: scale(1.1); 
+   }
+  
+
+
+
+   

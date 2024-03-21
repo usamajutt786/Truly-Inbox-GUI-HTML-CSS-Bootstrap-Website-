@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    Email warmup
+</title>
+<!-- add icon link -->
+  <link rel="icon" href="Pictures/logo.png"
+        type="image/x-icon">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./Styling/index.css">
+</head>
+<body>
+<div class="container-fluid mt-5">
+  <!-- Nav tabs with logo -->
+  <ul class="nav nav-tabs justify-content-between align-items-center" id="myTabs" role="tablist">
+    <li class="nav-item">
+      <a class="navbar-brand" href="#">
+        <img src="Pictures/logo.png" alt="Trulyinbox Logo" class="logo"> Truly<b>inbox</b>
+      </a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link active" id="warmup-tab" data-toggle="tab" href="#warmup" role="tab" aria-controls="warmup" aria-selected="true">Email Warm-Up</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="billing-tab" data-toggle="tab" href="#bill" role="tab" aria-controls="bill" aria-selected="false">Billings & Subscriptions</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="coldEmail-tab" data-toggle="tab" href="#coldEmail" role="tab" aria-controls="coldEmail" aria-selected="false">Send Cold Emails</a>
+    </li>
+    <!-- li for adjustting the nav items that are jesitgfy  center  -->
+    <li></li>
+    <li>  </li>
+    <li></li>
+    <li></li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <img src="Pictures/profile.png" class="profile-icon"> Muhammad Usama
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="#"><i class="bi bi-gear"></i>Profile Setting</a>
+        <a class="dropdown-item" href="#"><i class="bi bi-question-circle"></i>Help</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#"><i class="bi bi-box-arrow-left"></i>Logout</a>
+      </div>
+    </li>
+  </ul>  
+  <!-- Tab panes -->
+  <div class="tab-content mt-3">
+    <div class="tab-pane fade show active" id="warmup" role="tabpanel" aria-labelledby="warmup-tab">
+      <!-- Content for Warmup tab -->
+    </div>
+    <div class="tab-pane fade" id="bill" role="tabpanel" aria-labelledby="billing-tab">
+      <!-- Content for Billing tab -->
+    </div>
+    <div class="tab-pane fade" id="coldEmail" role="tabpanel" aria-labelledby="coldEmail-tab">
+      <!-- Content for Cold Email tab -->
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    // Load Email-Warmup.html content by default
+    $("#warmup").load("./Email-Warmup.html");
+  
+    // Load content of each tab when clicked
+    $("#warmup-tab").click(function(){
+      $("#warmup").load("./Email-Warmup.html");
+    });
+    $("#billing-tab").click(function(){
+      $("#bill").load("billing-sub.html");
+    });
+    $("#coldEmail-tab").click(function(){
+      $("#coldEmail").load("Send-cold-email.html");
+    });
+  });
+</script>
+<!-- chatbot picture -->
+<img class="chatbot-icon"  src="./Pictures/logo.png" alt="" srcset="">
+</body>
+</html>

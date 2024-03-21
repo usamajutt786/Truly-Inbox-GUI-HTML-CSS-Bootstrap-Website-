@@ -1,0 +1,211 @@
+/* styling for button add email account */
+.custom-button {
+    border-radius: 5px;
+    margin-left: 50px;
+    background-color: #ff7f0e;
+    width: 160px;
+    height: 35px;
+    border: none;
+    color: white;
+}
+/* for form buttons action in a row  */
+.custom-button11 {
+    border: none;
+    background: none;
+    padding: 5px;
+    position: relative;
+}
+/* the contanct that is desplaying on the buttons*/
+.custom-button11:hover::after {
+    content: attr(toodle);
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+/* this is green the bacground of switch */
+.form-switch .form-check-input:checked {
+    background-color: green !important;
+    border-color: green !important;
+  }
+
+  /* these two are use for styling the error column in add email modal */
+  .error-container {
+    background-color: #ffebee;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .error-message {
+    color: #b71c1c;
+    margin: 0px;
+  }
+
+  .custom-btn {
+    margin-top: 0px;
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+    width: 300px; /* Increase button length */
+    margin: 0 auto; /* Center the button horizontally */
+    display: block; /* Ensure button takes up full width */
+
+  }
+  .submitt {
+    border-radius: 5px;
+    background-color: #ff7f0e; /* Orange background */
+    border: none; /* Remove border */
+    color: #ffffff; /* White text color */
+    font-weight: bold; /* Bold text */
+    padding: 10px 20px; /* Increase padding */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+    width: 160px; /* Increase button length */
+  }
+  .submitt:hover {
+    background-color: #ffac33; /* Lighter orange on hover */
+  }
+  .buttonlink-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .buttonlink {
+    display: inline-block;
+    padding: 5px 5px;
+    border: 1px solid #e0da7d;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #a7a0a0;
+    transition: background-color 0.3s;
+  }
+  
+  .buttonlink:hover {
+    background-color: rgb(224, 224, 208);
+  }
+  
+  /* Search container  */
+ .search-container {
+        display: flex;
+        align-items: center;
+        border: 1px solid #ccc;
+        padding: 5px;
+        border-radius: 5px;
+        width: 250px;
+    }
+    
+    .search-container input[type="text"] {
+        flex: 1;
+        border: none;
+        outline: none;
+    }
+    
+    .search-container button {
+        margin-left: 20px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Shift icon to left */
+    .search-container .icon {
+        margin-right: 10px;
+    }
+
+    /* table header */
+.custom-table thead {
+    background-color: #e9ecee; /* Add color to the table header */
+    color: rgb(69, 64, 64); /* Set text color in the table header */
+}
+
+.small-disabled-button {
+    margin-left: 5px;
+    background-color: #dddddd; /* Color for disabled button */
+    border: none;
+    cursor: not-allowed;
+}
+
+/* link button */
+.link-button {
+    margin-left: 5px;
+    height: 25px;
+    width: 140px;
+    display: inline-block;
+    padding: 2px 2px 2px 2px;
+    background-color: white; /* Button background color */
+    color: blue; /* Button text color */
+    text-decoration: none; /* Remove underline from the link */
+    border-radius: 5px; /* Optional: rounded corners */
+    border: 1px solid blue; /* Add border */
+}
+
+.link-button:hover {
+    background-color: #bcd4ee; /* Button background color on hover */
+}
+
+/* badge  css*/
+.stopped {
+    position: relative; /* Set the position to relative for tooltip positioning */
+    border-radius: 20px;
+    padding: 5px 5px 5px 5px;
+    background-color: #e9d1be; /* Set background color to orange */
+    color: #c2410c; /* Set text color to yellow */
+    display: inline-flex; /* Make sure the badge is displayed inline */
+    align-items: center; /* Center the content vertically */
+}
+
+.stopped:hover::after {
+    font-weight: 500;
+    content: attr(data-tooltip); /* Set the content of the tooltip to the value of the data-tooltip attribute */
+    position: absolute; /* Set the position to absolute for proper placement */
+    top: calc(100% + 5px); /* Position the tooltip below the element */
+    left: 50%; /* Align the tooltip horizontally */
+    transform: translateX(-50%); /* Center the tooltip horizontally */
+    padding: 5px; /* Add padding to the tooltip */
+    background-color: black; /* Set background color of the tooltip to black */
+    color: white; /* Set text color of the tooltip to white */
+    border-radius: 5px; /* Add border radius to the tooltip */
+    white-space: nowrap; /* Prevent tooltip from wrapping */
+    z-index: 1; /* Ensure tooltip appears above other content */
+}
+
+.badge-dot {
+
+    width: 10px; /* Set width of the dot */
+    height: 10px; /* Set height of the dot */
+    background-color: #ff7f0e; /* Set dot color to yellow */
+    border-radius: 50%; /* Make the dot circular */
+    margin-right: 5px; /* Add some space between dot and label */
+}
+
+
+.question-icon {
+    background-color: #fd7e14;
+    color: white;
+    
+    border-radius: 50%;
+}
+
+
+.tooltip-inner {
+    background-color: white;
+    color: black;
+}
+
+.btn1 {
+    font-size: 12px;
+    text-align: center;
+}
+.hide-button {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hide-button:hover {
+    opacity: 1;
+    text-align: center;
+    border-radius: 5px;
+    border: solid 1.5px; 
+ }

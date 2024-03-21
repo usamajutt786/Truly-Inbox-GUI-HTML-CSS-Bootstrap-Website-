@@ -1,0 +1,56 @@
+.card {
+  width: 350px;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card-title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.card-subscribe-btn {
+  width: 270px;
+  height: 45px;
+  font-size: 1.5rem;
+  background-color: rgb(253, 116, 39);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.card-subscribe-btn:hover {
+  background-color: rgb(253, 116, 39);
+  color: white;
+}
+
+.price {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.price-text {
+  font-size: 1.5rem;
+}
+
+.card-body {
+  padding: 20px 20px 20px 30px;
+  /* Added left padding */
+}
+
+.list-unstyled li {
+  padding-left: 20px;
+}
+
+#per-month {
+  margin-left: -75px;
+  display: flex;
+  flex-direction: column;
+}
+
+#price-wrapper {
+  display: flex;
+  align-items: center;
+}
